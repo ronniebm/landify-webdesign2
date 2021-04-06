@@ -4,4 +4,107 @@
 @import './sections/_hero';
 @import './sections/_clouds';
 @import './sections/_features';
+@import './sections/_testimonials';
 
+.testimonial {
+  background-color: $turquoise-100;
+  &__div-text {
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__h1 {
+      width: 93%;
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: 400;
+      color: $black;
+      text-align: center;
+    }
+    &__p {
+      margin-top: 16px;
+      font-size: 16px;
+      font-weight: 400;
+      color: $black;
+      text-align: center;
+      width: 240px;
+      margin-top: 48px;
+    }
+    &__span {
+      color: $turquoise;
+      font-style: 18px;
+      font-weight: 700;
+    }
+    
+  }
+
+  &__wrapper {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__div-image {
+    background-image: url(../img/girl.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    width: 190px;
+    position: absolute;
+    z-index: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .clouds {
+    &__div-text {
+      &__p {
+        width: 450px;
+      }
+    }
+
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .testimonial {
+    display: flex;
+    justify-content: space-between;
+    height: 596px;
+    &__div-text {
+      margin-top: 0%;
+      width: 800px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 35px;
+      &__h1 {
+        text-align: left;
+        font-size: 18px;
+        width: 720px;
+      }
+      &__p {
+        text-align: left;
+      }
+    }
+    &__wrapper {
+      align-items: flex-end;
+      margin-top: 0%;
+      width: 610px;
+      height: 100%;
+    }
+    &__div-image {
+      width: 350px;
+      height: 556px;
+      margin-right: 100px;
+    }
+  }
+}
