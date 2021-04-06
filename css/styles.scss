@@ -8,11 +8,15 @@
 
 .testimonial {
   background-color: $turquoise-100;
+  position: relative;
   &__div-text {
     padding: 4%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    &__quotes {
+      display: none;
+    }
     &__h1 {
       width: 93%;
       margin-top: 20px;
@@ -34,6 +38,25 @@
       color: $turquoise;
       font-style: 18px;
       font-weight: 700;
+    }
+    &__dots {
+      margin-top: 40px;
+      width: 80px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .dot {
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        background-color: #D9DBE1;
+        cursor: pointer;
+      }
+      & > :nth-child(1) {
+        background-color: $turquoise;
+      }
+  
     }
     
   }
@@ -86,6 +109,12 @@
       justify-content: center;
       align-items: flex-start;
       padding-left: 35px;
+      &__quotes {
+        display: block;
+        position: absolute;
+        top: 108px;
+        opacity: .3;
+      }
       &__h1 {
         text-align: left;
         font-size: 18px;
@@ -93,6 +122,9 @@
       }
       &__p {
         text-align: left;
+      }
+      &__dots {
+        margin-top: 96px;
       }
     }
     &__wrapper {

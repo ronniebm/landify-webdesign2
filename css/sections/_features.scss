@@ -63,6 +63,19 @@
       justify-content: left;
       &__card {
         width: 347px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width: 1400px) {
+
+  .features {
+    &__cards {
+      &__card {
+        margin-right: 60px;
       }
     }
   }
