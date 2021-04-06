@@ -1,3 +1,328 @@
 @import './base/_settings';
 @import './base/_base';
 @import './common/_navbar';
+
+//--- navigation bar settings -----------------------
+$header-background: white;
+$header-box-shadow-desktop: 0px 1px 0px #E5E9F2;
+$header-height: 60px;
+$header-logo-height: 23px;
+$header-left-righ-margin: 4%;
+//-----------
+$burger-lines-color: $purple;
+$burger-background: transparent; //df: transparent
+$burger-scaling-size: scale(0.8) translateX(-4px);
+//-----------
+$menu-background: white; //df: white
+$menu-contact-margin-top: 10vh; //df: 10vh
+$menu-contact-options-width: 80vw; //df: 80vw
+$menu-contact-options-height: 50px; //df: 50px
+$menu-contact-options-separation: 10px; //df: 10px
+$menu-contact-options-line-color: $burger-lines-color; //df: $burger-lines-color
+$menu-contact-options-border: none; //df: 'none'
+$menu-contact-options-border-radius: 0; //df: 0
+$menu-contact-options-box-shadow: none; //df: 'none'
+$menu-contact-options-font-color: $black; //df: $burger-lines-color
+$menu-contact-options-font-size: 14px; //df: 'regular'
+$menu-contact-options-font-weight: 700; //df: 'regular'
+//-----------
+$menu-sign-options-margin-top: 400px;
+$menu-sign-options-width: 120px;
+$menu-sign-options-height: 40px;
+$menu-sign-options-separation: 10%;
+$menu-sign-options-box-shadow: none; //df: 'none'
+$menu-sign-options-border: none; //df: 'none'
+$menu-sign-options-border-radius: 8px; //df: 'none'
+$menu-sign-options-background-color-first: red;
+//-----------
+$menu-sign-options-font-size: 14px;
+$menu-sign-options-font-weight: 700;
+
+$menu-btn1-background-color: $purple-100;
+$menu-btn2-background-color: $purple;
+
+$menu-btn1-hover-text-color: white;
+$menu-btn2-hover-text-color: white;
+$menu-btn1-hover-background-color: magenta;
+$menu-btn2-hover-background-color: magenta;
+
+
+
+$menu-btn1-text-color: $purple;
+$menu-btn2-text-color: white;
+//------------------------------------------------
+
+
+.header{
+  width: 100%;
+  height: $header-height;
+  background-color: $header-background;
+  box-shadow: $header-box-shadow-desktop;
+}
+
+.header--active {
+  .nav {
+    &__contact, &__sign {
+      left: 0;
+    }
+  }
+}
+
+.nav {
+  width: 100%;
+  height: $header-height;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  background-color: $header-background;
+  &__burger {
+    margin-left: $header-left-righ-margin;
+    background: $burger-background;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: $header-height;
+    transform: $burger-scaling-size;
+    transition: all 0.2s ease-in-out;
+    &__left {
+      background: $burger-lines-color;
+      width: 20px;
+      height: 4px;
+      border-radius: 4px;
+      transition: all 0.2s ease-in-out;
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 4px;
+        background: $burger-lines-color;
+        border-radius: 4px;
+        transition: all 0.2s ease-in-out;
+        margin-left: -10px;
+      }
+      &::before {
+        transform: translateY(-10px);
+      }
+      &::after {
+        transform: translateY(10px);
+      }
+    }
+    &__right {
+      background: $burger-lines-color;
+      width: 20px;
+      height: 4px;
+      border-radius: 4px;
+      transition: all 0.2s ease-in-out;
+      margin-left: -5px;
+      align-content: center;
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 4px;
+        background: $burger-lines-color;
+        border-radius: 4px;
+        transition: all 0.2s ease-in-out;
+        margin-left: -10px;
+      }
+      &::before {
+        transform: translateY(-10px);
+      }
+      &::after {
+        transform: translateY(10px);
+      }
+    }
+  }
+  &__contact {
+    display: flex;
+    justify-content: center;
+    background-color: $menu-background;
+    width: 100%;
+    height: calc(100vh - #{$header-height}); //config
+    height: 1200px; //config
+    top: calc(#{$header-height - 0.1}); //config
+    position: absolute;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 1px $burger-lines-color;
+    &__ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      margin-top: $menu-contact-margin-top; //config
+    }
+    &__li {
+      text-align: center;
+      margin-bottom: $menu-contact-options-separation; //config
+    }
+    &__a {
+      text-decoration: none;
+      color: $menu-contact-options-font-color;
+      font-size: $menu-contact-options-font-size;
+      font-weight: $menu-contact-options-font-weight;
+    }
+    &__wrap {
+      width: $menu-contact-options-width; //config
+      height: $menu-contact-options-height; //config
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      border: $menu-contact-options-border;
+      border-radius: $menu-contact-options-border-radius;
+      box-shadow: $menu-contact-options-box-shadow;
+      transition: all 0.2s ease-in-out;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(#{$menu-contact-options-height + $menu-contact-options-separation / 2});
+        height: 1px;
+        width: 80vw;
+        background-color: $menu-contact-options-line-color;
+        &:nth-child(1) {
+          background-color: red;
+        }
+      }
+      &:hover {
+        color: purple;
+        font-size: 16px;
+      }
+    }
+  }
+  &__logo {
+    margin-right: $header-left-righ-margin;
+    height: $header-logo-height;
+    margin-left: auto;
+  }
+  &__sign {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: $menu-sign-options-margin-top;//config
+    position: absolute;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+    &__ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+    &__li:first-child {
+      margin-right: $menu-sign-options-separation;
+    }
+    &__a {
+      text-decoration: none;
+      .menu-btn1 {
+        background-color: $menu-btn1-background-color;
+        color: $menu-btn1-text-color;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          background-color: $menu-btn1-hover-background-color;
+          color: $menu-btn1-hover-text-color;
+        }
+      
+      }
+      .menu-btn2 {
+        background-color: $menu-btn2-background-color;
+        color: $menu-btn2-text-color;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          background-color: $menu-btn2-hover-background-color;
+          color: $menu-btn2-hover-text-color;
+        }
+      }
+    }
+    &__wrap {
+      border: $menu-sign-options-border;
+      border-radius: $menu-sign-options-border-radius;
+      box-shadow: $menu-sign-options-box-shadow;
+      height: $menu-sign-options-height;
+      width: $menu-sign-options-width;
+      font-size: $menu-sign-options-font-size;
+      font-weight: $menu-sign-options-font-weight;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: $header-background;
+    position: fixed;
+    box-shadow: $header-box-shadow-desktop;
+    z-index: 100;//testing
+  }
+
+  .nav{
+    width: 1200px;
+    justify-content: space-between;
+    &__burger {
+      display: none;
+    }
+    &__contact {
+      background-color: transparent;
+      position: sticky;
+      height: auto;
+      width: auto;
+      box-shadow: none;
+      &__ul {
+        flex-direction: row;
+        align-items: center;
+        margin: auto;
+        height: $header-height;
+      }
+      &__wrap {
+        margin-top: 7px;
+        width: 100px;
+        height: fit-content;
+        margin-right: 0px;
+        &::after {
+          display: none;
+        }
+      }
+    }
+    &__logo {
+      margin: 0;
+      width: auto;
+    }
+    &__sign {
+      position: sticky;
+      height: $header-height;
+      // width: auto;
+      width: 320px;
+      margin: 0;
+      &__ul {
+        align-items:  center;
+      }
+      &__wrap{
+        position: sticky;
+        margin: 0;
+      }
+    }
+  }
+
+
+}
+
+@media only screen and (min-width: 1400px) {
+  
+  .nav {
+    width: 1400px;
+  }
+
+}

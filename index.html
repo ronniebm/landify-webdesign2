@@ -6,14 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="Description" content="Landify website.">
   <link rel="dns-prefetch icon" type="image/png" href="./img/favicon.png">
-  <link rel="dns-prefetch stylesheet" href="./css/grid/bootstrap-grid5.min.css">
   <link rel="dns-prefetch stylesheet" href="./css/styles.css">
   <title>Landify</title>
 
 </head>
 <body class="body">
 
-  
-  
+  <header class="header js-header">
+    <div class="nav">
+
+      <button class="nav__burger js-burger" aria-label="Button Menu">
+        <div class="nav__burger__left"></div>
+        <div class="nav__burger__right"></div>
+      </button>
+
+      <nav class="nav__contact">
+        <ul class="nav__contact__ul">
+          <li class="nav__contact__li"><a class="nav__contact__a" href="#"><div class="nav__contact__wrap">About</div></a></li>
+          <li class="nav__contact__li"><a class="nav__contact__a" href="#"><div class="nav__contact__wrap">Pricing</div></a></li>
+          <li class="nav__contact__li"><a class="nav__contact__a" href="#"><div class="nav__contact__wrap">Contact</div></a></li>
+        </ul>
+      </nav>
+
+      <img class="nav__logo" src="./img/logo.png" alt="logo">
+
+      <nav class="nav__sign">
+        <ul class="nav__sign__ul">
+          <li class="nav__sign__li"><a class="nav__sign__a" href="#"><div class="nav__sign__wrap menu-btn1">Login</div></a></li>
+          <li class="nav__sign__li"><a class="nav__sign__a" href="#"><div class="nav__sign__wrap menu-btn2">Sign up</div></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <script type="module" rel="preload dns-prefetch" src="./scripts/navigation.js"></script>
 </body>
 </html>
