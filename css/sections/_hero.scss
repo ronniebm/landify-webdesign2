@@ -13,7 +13,7 @@
       margin-top: 16px;
       color: $black;
       text-align: center;
-      width: 350px;
+      width: 280px;
     }
     &__button {
       margin-top: 48px;
@@ -27,7 +27,7 @@
       color: white;
       transition: all 0.3s ease-in-out;
       &:hover {
-        background-color: purple;
+        background-color: magenta;
       }
     }
   }
@@ -87,6 +87,19 @@
     }
     
   }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .hero {
+    &__div-text {
+      &__p {
+        width: 450px;
+      }
+    }
+
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {
