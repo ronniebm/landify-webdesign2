@@ -1,0 +1,102 @@
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__cards {
+    width: 92%;
+    display: flex;
+    justify-content: center;
+    &__card {
+      width: 200px;
+      margin-right: 0px;
+      margin-bottom: 20px;
+      transform: scale(0.6);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__title {
+        font-size: 24px;
+        font-weight: 600;
+        color: $black;
+        margin-bottom: 8px;
+      } 
+      &__more{
+        margin-bottom: 20px;
+        height: 55px;
+        &__link {
+          text-decoration: none;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        &__img {
+          transform: translateY(10px);
+          width: 50px;
+        }
+        &__span {
+          margin-top: 20px;
+          text-align: center;
+          color: $purple;
+          margin-right: 8.83px;
+          margin-left: 10px;
+          width: 85%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .stats {
+    height: 232px;
+    justify-content: center;
+    &__cards {
+      margin-top: 40px;
+      width: 94.5%;
+      justify-content: left;
+      &__card {
+        width: 347px;
+        margin-right: 20px;
+        transform: scale(1);
+        display: block;
+        &__title {
+          font-size: 48px;
+          font-weight: 800;
+          color: $gray-900;
+        }
+        &__more {
+          flex-direction: row;
+          &__link {
+            flex-direction: row;
+          }
+          &__img {
+            width: 28px;
+          }
+          &__span {
+            margin-top: 0;
+            text-align: left;
+            color: $gray-900;
+            font-size: 16px;
+            margin-top: 20px;
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width: 1400px) {
+
+  .stats {
+    &__cards {
+      &__card {
+        margin-right: 60px;
+      }
+    }
+  }
+
+}
