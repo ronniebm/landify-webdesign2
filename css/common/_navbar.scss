@@ -271,6 +271,7 @@ $menu-btn2-text-color: white;
   .nav{
     width: 1200px;
     justify-content: space-between;
+    border-bottom: none;
     &__burger {
       display: none;
     }
