@@ -4,7 +4,7 @@ $header-box-shadow-desktop: 0px 1px 0px #E5E9F2;
 $header-height: 60px;
 $header-logo-height: 23px;
 $header-left-righ-margin: 4%;
-//-----------
+//----------- 
 $burger-lines-color: $purple;
 $burger-background: transparent; //df: transparent
 $burger-scaling-size: scale(0.8) translateX(-4px);
@@ -42,8 +42,6 @@ $menu-btn2-hover-text-color: white;
 $menu-btn1-hover-background-color: magenta;
 $menu-btn2-hover-background-color: magenta;
 
-
-
 $menu-btn1-text-color: $purple;
 $menu-btn2-text-color: white;
 //------------------------------------------------
@@ -54,6 +52,8 @@ $menu-btn2-text-color: white;
   height: $header-height;
   background-color: $header-background;
   box-shadow: $header-box-shadow-desktop;
+  position: relative;
+  z-index: 2;
 }
 
 .header--active {
@@ -70,7 +70,9 @@ $menu-btn2-text-color: white;
   display: flex;
   align-items: center;
   position: fixed;
+  top: 0%;
   background-color: $header-background;
+  border-bottom: 1px solid #d5bcf1;
   &__burger {
     margin-left: $header-left-righ-margin;
     background: $burger-background;
@@ -208,6 +210,7 @@ $menu-btn2-text-color: white;
     left: -100%;
     opacity: 1;
     transition: all 0.2s ease-in-out;
+    z-index: 100;
     &__ul {
       list-style: none;
       display: flex;
