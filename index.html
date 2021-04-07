@@ -13,7 +13,15 @@
 <body class="body">
 
   <header class="header js-header">
+
+    
+
     <div class="nav">
+
+      <div class="edit js-edit">
+        <button class="edit__button" >Save Changes</button>
+        <div class="edit__banner"></div>
+      </div>
 
       <button class="nav__burger js-burger" aria-label="Button Menu">
         <div class="nav__burger__left"></div>
@@ -22,9 +30,9 @@
 
       <nav class="nav__contact">
         <ul class="nav__contact__ul">
-          <li class="nav__contact__li"><a class="nav__contact__a" href="#"><div class="nav__contact__wrap">About</div></a></li>
-          <li class="nav__contact__li"><a class="nav__contact__a" href="#"><div class="nav__contact__wrap">Pricing</div></a></li>
-          <li class="nav__contact__li"><a class="nav__contact__a" href="#"><div class="nav__contact__wrap">Contact</div></a></li>
+          <li class="nav__contact__li"><a class="nav__contact__a" href="#"><div class="nav__contact__wrap js-edit-item">About</div></a></li>
+          <li class="nav__contact__li"><a class="nav__contact__a" href="#"><div class="nav__contact__wrap js-edit-item">Pricing</div></a></li>
+          <li class="nav__contact__li"><a class="nav__contact__a" href="#"><div class="nav__contact__wrap js-edit-item">Contact</div></a></li>
         </ul>
       </nav>
 
@@ -42,8 +50,8 @@
   <section class="container">
     <div class="row hero">
       <div class="hero__div-text">
-        <h1 class="hero__div-text__h1">Landing page UI kit</h1>
-        <p class="hero__div-text__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.</p>
+        <h1 class="hero__div-text__h1 js-edit-item">Landing page UI kit</h1>
+        <p class="hero__div-text__p js-edit-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.</p>
         <button class="hero__div-text__button">Get Started</button>
       </div>
 
@@ -67,8 +75,8 @@
   <section class="container">
     <div class="row clouds">
       <div class="clouds__div-text">
-        <h1 class="clouds__div-text__h1">Get deals from  100+ companies</h1>
-        <p class="clouds__div-text__p">Subscribe to our application and get deals from top notch companies in the world every month. Be an exclusive member of the team.</p>
+        <h1 class="clouds__div-text__h1 js-edit-item">Get deals from  100+ companies</h1>
+        <p class="clouds__div-text__p js-edit-item">Subscribe to our application and get deals from top notch companies in the world every month. Be an exclusive member of the team.</p>
       </div>
 
       <div class="clouds__wrapper">
@@ -91,17 +99,17 @@
   <section class="container">
     <div class="row features">
 
-      <h1 class="features__title">Discover the key features</h1>
+      <h1 class="features__title js-edit-item">Discover the key features</h1>
 
       <div class="features__cards">
         <div class="features__cards__card">
           <img class="features__cards__card__img" src="./img/layout-horizontal.png" alt="layout-horizontal">
-          <h2 class="features__cards__card__title">Multiple links</h2>
-          <p class="features__cards__card__subtitle">Add multiple links in Instagram instead of just one.</p>
+          <h2 class="features__cards__card__title js-edit-item">Multiple links</h2>
+          <p class="features__cards__card__subtitle js-edit-item">Add multiple links in Instagram instead of just one.</p>
 
           <div class="features__cards__card__more">
             <a class="features__cards__card__more__link" href="#">
-                <span class="features__cards__card__more__span">Know more</span>
+                <span class="features__cards__card__more__span js-edit-item">Know more</span>
                 <img class="features__cards__card__more__img" src="./img/icon/icon-arrow.png" alt="icon-arrow">
             </a>
           </div>
@@ -109,12 +117,12 @@
 
         <div class="features__cards__card">
           <img class="features__cards__card__img" src="./img/layout-vertical.png" alt="layout-horizontal">
-          <h2 class="features__cards__card__title">Online messaging</h2>
-          <p class="features__cards__card__subtitle">Allow your clients to connect with you with one click.</p>
+          <h2 class="features__cards__card__title js-edit-item">Online messaging</h2>
+          <p class="features__cards__card__subtitle js-edit-item">Allow your clients to connect with you with one click.</p>
 
           <div class="features__cards__card__more">
             <a class="features__cards__card__more__link" href="#">
-                <span class="features__cards__card__more__span">Know more</span>
+                <span class="features__cards__card__more__span js-edit-item">Know more</span>
                 <img class="features__cards__card__more__img" src="./img/icon/icon-arrow.png" alt="icon-arrow">
             </a>
           </div>
@@ -122,12 +130,12 @@
 
         <div class="features__cards__card">
           <img class="features__cards__card__img" src="./img/layout-tiles.png" alt="layout-horizontal">
-          <h2 class="features__cards__card__title">Application forms</h2>
-          <p class="features__cards__card__subtitle">Capture leads and grow your business with them.</p>
+          <h2 class="features__cards__card__title js-edit-item">Application forms</h2>
+          <p class="features__cards__card__subtitle js-edit-item">Capture leads and grow your business with them.</p>
 
           <div class="features__cards__card__more">
             <a class="features__cards__card__more__link" href="#">
-                <span class="features__cards__card__more__span">Know more</span>
+                <span class="features__cards__card__more__span js-edit-item">Know more</span>
                 <img class="features__cards__card__more__img" src="./img/icon/icon-arrow.png" alt="icon-arrow">
             </a>
           </div>
@@ -142,8 +150,8 @@
     <div class="row testimonial">
       <div class="testimonial__div-text">
         <img class="testimonial__div-text__quotes" src="./img/quotes.png" alt="double quotes">
-        <h1 class="testimonial__div-text__h1">We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the product concept so quickly. It acted as a catalyst to take our design to the next level and get more eyes on our product.</h1>
-        <p class="testimonial__div-text__p"><span class="testimonial__div-text__span">Scarlett Johansson</span><br>CEO at Xion</p>
+        <h1 class="testimonial__div-text__h1 js-edit-item">We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the product concept so quickly. It acted as a catalyst to take our design to the next level and get more eyes on our product.</h1>
+        <p class="testimonial__div-text__p"><span class="testimonial__div-text__span js-edit-item">Scarlett Johansson</span class="js-edit-item"><br>CEO at Xion</p>
         <div class="testimonial__div-text__dots">
           <div class="dot"></div>
           <div class="dot"></div>
@@ -163,34 +171,34 @@
 
       <div class="stats__cards">
         <div class="stats__cards__card">
-          <h2 class="stats__cards__card__title">700k</h2>
+          <h2 class="stats__cards__card__title js-edit-item">700k</h2>
           
           <div class="stats__cards__card__more">
             <a class="stats__cards__card__more__link" href="#">
               <img class="stats__cards__card__more__img" src="./img/icon/icon-youtube.png" alt="icon-arrow">
-              <span class="stats__cards__card__more__span">Youtube Subscribers</span>
+              <span class="stats__cards__card__more__span js-edit-item">Youtube Subscribers</span>
             </a>
           </div>
         </div>
 
         <div class="stats__cards__card">
-          <h2 class="stats__cards__card__title">2.4m</h2>
+          <h2 class="stats__cards__card__title js-edit-item">2.4m</h2>
           
           <div class="stats__cards__card__more">
             <a class="stats__cards__card__more__link" href="#">
               <img class="stats__cards__card__more__img" src="./img/icon/icon-instagram.png" alt="icon-arrow">
-              <span class="stats__cards__card__more__span">Instagram Followers</span>
+              <span class="stats__cards__card__more__span js-edit-item">Instagram Followers</span>
             </a>
           </div>
         </div>
 
         <div class="stats__cards__card">
-          <h2 class="stats__cards__card__title">100k</h2>
+          <h2 class="stats__cards__card__title js-edit-item">100k</h2>
           
           <div class="stats__cards__card__more">
             <a class="stats__cards__card__more__link" href="#">
               <img class="stats__cards__card__more__img" src="./img/icon/icon-dribble.png" alt="icon-arrow">
-              <span class="stats__cards__card__more__span">Dribbble Shot Likes</span>
+              <span class="stats__cards__card__more__span js-edit-item">Dribbble Shot Likes</span>
             </a>
           </div>
         </div>
@@ -209,12 +217,12 @@
       </div>
 
       <div class="single__div-text">
-        <h1 class="single__div-text__h1">Headline</h1>
-        <p class="single__div-text__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non. Non commodo volutpat, pharetra, vel.</p>
+        <h1 class="single__div-text__h1 js-edit-item">Headline</h1>
+        <p class="single__div-text__p js-edit-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non. Non commodo volutpat, pharetra, vel.</p>
       
         <div class="features__cards__card__more">
           <a class="features__cards__card__more__link" href="#">
-              <span class="features__cards__card__more__span">Get started</span>
+              <span class="features__cards__card__more__span js-edit-item">Get started</span>
               <img class="features__cards__card__more__img" src="./img/icon/icon-arrow.png" alt="icon-arrow">
           </a>
         </div>
@@ -234,7 +242,7 @@
       </div>
 
       <div class="cta__div-text">
-        <h1 class="cta__div-text__h1">Join 569 more people in the waitlist</h1>
+        <h1 class="cta__div-text__h1 js-edit-item">Join 569 more people in the waitlist</h1>
         
         <div class="cta__div-text__email">
           <form class="cta__div-text__email__form" action="">
@@ -255,35 +263,35 @@
         <div class="footer__top__group1">
           <div class="footer__top__group1__left">
             <div class="option">
-              <h2 class="option__title">Company</h2>
-              <a class ="link-setting" href="#"><h4 class="option__subtitle">About us</h4></a>
-              <a class ="link-setting" href="#"><h4 class="option__subtitle">Blog</h4></a>
-              <a class ="link-setting" href="#"><h4 class="option__subtitle">Careers</h4></a>
-              <a class ="link-setting" href="#"><h4 class="option__subtitle">Contact Us</h4></a>
+              <h2 class="option__title js-edit-item">Company</h2>
+              <a class ="link-setting" href="#"><h4 class="option__subtitle js-edit-item">About us</h4></a>
+              <a class ="link-setting" href="#"><h4 class="option__subtitle js-edit-item">Blog</h4></a>
+              <a class ="link-setting" href="#"><h4 class="option__subtitle js-edit-item">Careers</h4></a>
+              <a class ="link-setting" href="#"><h4 class="option__subtitle js-edit-item">Contact Us</h4></a>
             </div>
           </div>
           <div class="footer__top__group1__right">
             <div class="option">
-              <h2 class="option__title">Support</h2>
-              <a class ="link-setting" href="#"><h4 class="option__subtitle">Help Center</h4></a>
-              <a class ="link-setting" href="#"><h4 class="option__subtitle">Safety Center</h4></a>
-              <a class ="link-setting" href="#"><h4 class="option__subtitle">Community Guidelines</h4> </a> 
+              <h2 class="option__title js-edit-item">Support</h2>
+              <a class ="link-setting" href="#"><h4 class="option__subtitle js-edit-item">Help Center</h4></a>
+              <a class ="link-setting" href="#"><h4 class="option__subtitle js-edit-item">Safety Center</h4></a>
+              <a class ="link-setting" href="#"><h4 class="option__subtitle js-edit-item">Community Guidelines</h4> </a> 
             </div>
           </div>
         </div>
         <div class="footer__top__group2">
           <div class="footer__top__group1__left">
             <div class="option">
-              <h2 class="option__title">Legal</h2>
-              <a class ="link-setting" href="#"><h4 class="option__subtitle">Cookies Policy</h4></a>
-              <a class ="link-setting" href="#"><h4 class="option__subtitle">Privacy Policy</h4></a>
-              <a class ="link-setting" href="#"><h4 class="option__subtitle">Terms of Service</h4></a>
-              <a class ="link-setting" href="#"><h4 class="option__subtitle">Law Enforcement</h4></a>
+              <h2 class="option__title js-edit-item">Legal</h2>
+              <a class ="link-setting" href="#"><h4 class="option__subtitle js-edit-item">Cookies Policy</h4></a>
+              <a class ="link-setting" href="#"><h4 class="option__subtitle js-edit-item">Privacy Policy</h4></a>
+              <a class ="link-setting" href="#"><h4 class="option__subtitle js-edit-item">Terms of Service</h4></a>
+              <a class ="link-setting" href="#"><h4 class="option__subtitle js-edit-item">Law Enforcement</h4></a>
             </div>
           </div>
           <div class="footer__top__group1__right">
             <div class="option">
-              <h2 class="option__title">Install App</h2>
+              <h2 class="option__title js-edit-item">Install App</h2>
               <a class="option__link" href="#">
                 <img class="option__badge" src="./img/google-play-badge.png" alt="playstore">
               </a>
@@ -296,7 +304,7 @@
       </div>
       <div class="footer__bottom">
         <div class="social">
-          <p class="social__copyright">© 2020 Landify UI Kit. All rights reserved</p>
+          <p class="social__copyright js-edit-item  ">© 2020 Landify UI Kit. All rights reserved</p>
           <div class="social__icons">
             <img src="./img/icon/icon-instagram-dark.png" alt="instagram dark">
             <img src="./img/icon/icon-dribble-dark.png" alt="dribble dark">
@@ -310,5 +318,6 @@
       
 
   <script type="module" rel="preload dns-prefetch" src="./scripts/navigation.js"></script>
+  <script type="module" rel="preload dns-prefetch" src="./scripts/editable.js"></script>
 </body>
 </html>
