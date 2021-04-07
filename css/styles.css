@@ -996,3 +996,94 @@
     margin-right: 60px;
   }
 }
+
+.single__div-text {
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.single__div-text__h1 {
+  margin-top: 20px;
+  color: #0B0D17;
+  text-align: center;
+}
+
+.single__div-text__p {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  color: #0B0D17;
+  text-align: center;
+  width: 240px;
+}
+
+.single__wrapper {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.single__div-image {
+  background-image: url(../img/phone-mockup.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  z-index: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .single__div-text__p {
+    width: 450px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .single {
+    display: flex;
+    justify-content: space-between;
+    height: 614px;
+  }
+  .single__div-text {
+    margin-top: 0%;
+    width: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .single__div-text__h1 {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: start;
+  }
+  .single__div-text__p {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .single__wrapper {
+    margin-top: 0%;
+    width: 610px;
+    height: 100%;
+    padding-left: 5px;
+  }
+  .single__div-image {
+    width: 540px;
+    height: 540px;
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .single__div-text {
+    margin-right: 170px;
+  }
+}
