@@ -1116,7 +1116,6 @@
 }
 
 .cta__div-text__email {
-  background-color: red;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1216,6 +1215,16 @@
   }
   .cta__div-text__h1 {
     font-size: 40px;
+    width: 430px;
+  }
+  .cta__div-text__email__form {
+    flex-direction: row;
+  }
+  .cta__div-text__email__input {
+    border-radius: 5px 0px 0px 5px;
+  }
+  .cta__div-text__email__button {
+    border-radius: 0px 5px 5px 0px;
   }
 }
 
