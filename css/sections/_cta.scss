@@ -6,6 +6,7 @@
   width: 92%;
   height: 288px;
   border-radius: 16px;
+  margin-bottom: 34px;
   &__div-text {
     padding: 4%;
     display: flex;
@@ -75,11 +76,13 @@
 }
 
 @media only screen and (min-width: 768px) {
+
   .cta {
     display: flex;
     justify-content: space-between;
     height: 288px;
     border-radius: 16px;
+    margin-bottom: 64px;
     &__div-text {
       margin-top: 0%;
       width: 600px;
@@ -119,6 +122,7 @@
       &__h1 {
         font-size: 40px;
         width: 430px;
+        margin-bottom: 32px;
       }
       &__email {
         &__form {
